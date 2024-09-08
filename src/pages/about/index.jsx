@@ -3,6 +3,7 @@ import { PropagateLoader } from "react-spinners";
 import Team from '../../images/team.png'
 import { PersonCard } from "../../components/common/personCard";
 import { useTranslation } from "react-i18next";
+import { TeamData } from "../../utilities/data";
 
 
 export const About = () => {
@@ -33,12 +34,9 @@ export const About = () => {
                </div>
                <div className="w-[100%] bg-bgBlack h-auto">
                 <div className=" container grid w-[100%] py-[50px] h-auto gird-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[40px]">
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
-                <PersonCard />
+                {TeamData.map((item) => (
+                    <PersonCard key={item.id} {...item} />
+                ))}
                </div>
                </div>
             </div>

@@ -1,6 +1,8 @@
 import Web from '../images/web.png'
 import Bot from '../images/tgbot.png'
 import Pro from '../images/protfolio.png'
+import Aftondil from '../images/aftondil.jpg'
+import Shokh from '../images/shokh.jpg'
 import { AmericaFlag, RussianFlag, UzbFlag } from '../components/svgs'
 import Service1 from '../images/service1.jpg'
 import Pros from '../images/pro.jpg'
@@ -10,6 +12,8 @@ import Agency from '../images/agency.png'
 import App from '../images/app.png'
 import Corparative from '../images/corporative.png'
 import CoPage from '../images/copage.png'
+
+
 
 export const navData = [
     {
@@ -152,4 +156,25 @@ export const servicesData = [
         aos: 'fade-left',
         aos2: 'fade-right',
     }
+]
+
+export const TeamData = [
+    {
+        id: 1,
+        name: (t) => t('team.p1.name'),
+        position: (t) => t('team.p1.position'),
+        img: Shokh,
+    },
+    {
+        id: 2,
+        name: (t) => t('team.p2.name'),
+        position: (t) => t('team.p2.position'),
+        img: Aftondil,
+    },
+    {
+        id: 3,
+        name: (t) => t('team.p3.name'),
+        position: (t) => t('team.p3.position'),
+        img: 'https://source.unsplash.com/random/300x300?3',
+    },
 ]

@@ -74,12 +74,12 @@ i18n
                 position: 'Founder & CEO',
             },
             p2: {
-                name: 'Ukhtamov Shokhjakhon',
-                position: 'Founder & CEO',
+                name: 'Idiyev Aftondil',
+                position: 'AI Specialist & Backend Developer',
             },
             p3: {
-                name: 'Ukhtamov Shokhjakhon',
-                position: 'Founder & CEO',
+                name: 'Sobirov Baxtiyor',
+                position: 'UI/UX Designer',
             },
             p4: {
                 name: 'Ukhtamov Shokhjakhon',
@@ -168,12 +168,12 @@ i18n
                 position: 'Founder & CEO',
             },
             p2: {
-                name: 'O`ktamov Shohjahon',
-                position: 'Founder & CEO',
+                name: 'Idiyev Aftondil',
+                position: 'AI Specialist & Backend Developer',
             },
             p3: {
-                 name: 'O`ktamov Shohjahon',
-                 position: 'Founder & CEO',
+                 name: 'Sobirov Baxtiyor',
+                 position: 'UI/UX Designer',
             },
             p4: {
                  name: 'O`ktamov Shohjahon',
@@ -262,12 +262,12 @@ i18n
                 position: 'Основатель и генеральный директор',
             },
             p2: {
-                 name: 'Октамов Шахджахан',
-                 position: 'Основатель и генеральный директор',
+                 name: 'Idiyev Aftondil',
+                 position: 'AI Specialist & Backend Developer',
             },
             p3: {
-                 name: 'Октамов Шахджахан',
-                 position: 'Основатель и генеральный директор',
+                 name: 'Sobirov Baxtiyor',
+                 position: 'UI/UX Designer',
             },
             p4: {
                  name: 'Октамов Шахджахан',
