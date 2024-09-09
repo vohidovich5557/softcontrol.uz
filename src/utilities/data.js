@@ -12,6 +12,8 @@ import Agency from '../images/agency.png'
 import App from '../images/app.png'
 import Corparative from '../images/corporative.png'
 import CoPage from '../images/copage.png'
+import ChatBot from '../images/chatbot.png'
+import ChatbotBig from '../images/chatbotbig.png'
 
 
 
@@ -77,6 +79,12 @@ export const serviceData = [
         name: (t) => t('services.card5.title'),
         text: (t) => t('services.card5.text'),
         img: Corparative,
+    },
+    {
+        id: 7,
+        name: (t) => t('services.card6.title'),
+        text: (t) => t('services.card6.text'),
+        img: ChatBot,
     },
 ]
 
@@ -155,6 +163,16 @@ export const servicesData = [
         reverse: false,
         aos: 'fade-left',
         aos2: 'fade-right',
+    },
+    {
+        id: 6,
+        img: ChatbotBig,
+        title: (t) => t('services.card6.title'),
+        text: (t) =>  t('services.card6.text'),
+        btnTitle: (t) => t('services.card6.btn'),
+        reverse: true,
+        aos: 'fade-right',
+        aos2: 'fade-left',
     }
 ]
 

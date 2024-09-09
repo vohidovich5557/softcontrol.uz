@@ -65,6 +65,11 @@ i18n
                 title: 'CORPORATIVE WEB PAGE',
                 text: 'Development of web platforms, corporate sites of any level that will increase your sales',
                 btn: 'Apply my Project',
+            },
+            card6: {
+              title: 'AI CHATBOT',
+              text: 'AI Chatbot is a way to reduce the work of employees who interact with customers, leave customer requests in the bot, and customers communicate with the employee through the bot.',
+              btn: 'Apply my Project',
             }
           },
           team: {
@@ -159,6 +164,11 @@ i18n
                 title: 'CORPORATIVE WEB SAHIFA',
                 text: 'Savdolaringizni oshiradigan har qanday darajadagi veb-platformalar, korporativ saytlar ishlab chiqish',
                 btn: 'Loyiha biriktirish',
+            },
+            card6: {
+              title: 'AI CHATBOT',
+              text: 'AI Chatbot – mijozlar bilan o‘zaro aloqada bo‘lgan, mijozlar so‘rovlarini botda qoldiradigan va mijozlar xodim bilan bot orqali muloqot qiladigan xodimlar ishini qisqartirish usulidir.',
+              btn: 'Loyiha biriktirish',
             }
           },
           team: {
@@ -253,6 +263,11 @@ i18n
                 title: 'КОРПОРАТИВНЫЙ САЙТ',
                 text: 'Разработка веб-платформ, корпоративных сайтов любого уровня, которые повысят ваши продажи',
                 btn: 'Приложение к проекту',
+            },
+            card6: {
+              title: 'ЧАТБОТ AI',
+              text: 'AI Chatbot — это способ сократить работу сотрудников, которые взаимодействуют с клиентами, оставляют заявки клиентов в боте, а клиенты общаются с сотрудником через бота.',
+              btn: 'Приложение к проекту',
             }
           },
           team: {
