@@ -1,4 +1,4 @@
-import { Routes, Route, Router, Switch } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { AppLayout } from "./layout/app-layout"
 import {Home} from './pages/home'
 import {About} from './pages/about'
@@ -48,16 +48,12 @@ function App() {
         <PropagateLoader size={21} color="#b3b3b3"  />
       </div>
     ) : (
-      <Router>
-       <Switch>
+      <Routes>
          <Route path="/" element={<AppLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />}/>
       <Route path="services" element={<Services />}/>
-      <Route path="*">
-          <Redirect to="/" />
-        </Route>
       </Route>
       <Route path="login" element={<AdminLogin />} />
        <Route path="/admin" element={<AdminMain />}>
@@ -72,8 +68,7 @@ function App() {
         ) : (null)}
 
       </Route>
-       </Switch>
-    </Router>
+    </Routes>
     ) }
     </div>
     </>
