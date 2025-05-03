@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        grotesk: ["Space Grotesk", "sans-serif"], // Add the font
+      },
       colors: {
         navColor: '#7C797C',
         btnBlue: '#2C67EA',

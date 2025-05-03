@@ -7,7 +7,6 @@ import {Services} from './pages/service'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from "react"
-import { PropagateLoader } from "react-spinners"
 import {AdminMain} from './pages/admin'
 import {AdminHome} from './pages/admin/home'
 import { AdminLogin } from "./pages/admin/login"
@@ -43,12 +42,7 @@ function App() {
   return (
     <> 
     <div className="relative w-[100%] h-[100%]">
-      {loading ? (
-      <div className="w-[100%] h-[100vh] flex items-center justify-center">
-        <PropagateLoader size={21} color="#b3b3b3"  />
-      </div>
-    ) : (
-      <Routes>
+    <Routes>
          <Route path="/" element={<AppLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
@@ -69,7 +63,6 @@ function App() {
 
       </Route>
     </Routes>
-    ) }
     </div>
     </>
   )

@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import { PropagateLoader } from "react-spinners";
 import Team from '../../images/team.png'
 import { PersonCard } from "../../components/common/personCard";
 import { useTranslation } from "react-i18next";
@@ -8,22 +6,10 @@ import { TeamData } from "../../utilities/data";
 
 export const About = () => {
     const {t} = useTranslation()
-    const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-    }, [])
     return (
         <>
-         {loading ? (
-            <div className="flex items-center justify-center w-[100%] h-[100vh]">
-                <PropagateLoader size={21} color="#b3b3b3" />
-            </div>
-         ) : (
-            <div className="w-[100%] flex flex-col items-center gap-[100px] lg:gap-[200px] h-[100%]">
+          <div className="w-[100%] flex font-grotesk flex-col items-center gap-[100px] lg:gap-[200px] h-[100%]">
                <div className="pt-[60px] w-[95%] mx-[5px]">
                 <div className="w-[100%] rounded-[15px] relative h-[30vh] md:h-[50vh] overflow-hidden">
                   <img src={Team} alt="img of the team" className="w-[100%] h-[100%] transition-all ease-in-out duration-1000 hover:h-[150%] object-cover rounded-[15px] overflow-hidden" />
@@ -40,7 +26,6 @@ export const About = () => {
                </div>
                </div>
             </div>
-         )}
         </>
     )
 }

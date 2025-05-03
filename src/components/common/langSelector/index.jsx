@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useRef, useState } from 'react'
-import { AmericaFlag, ButtonIcon, RussianFlag, TopIcon, UzbFlag } from '../../svgs'
+import { AmericaFlag, ButtonIcon, ChinaFlag, RussianFlag, TopIcon, UzbFlag } from '../../svgs'
 import { langData } from '../../../utilities/data'
 import {useTranslation} from 'react-i18next'
 
@@ -47,12 +47,13 @@ function LangSelector() {
                 {selectedLanguage === 'Rus' && <RussianFlag />}
                 {selectedLanguage === 'Uzb' && <UzbFlag />}
                 {selectedLanguage === 'Eng' && <AmericaFlag />}
+                {selectedLanguage === '中国' && <ChinaFlag />}
 
-                <span className='text-[1.125rem] text-btnBlue'>{selectedLanguage}</span>
+                <span className='text-[1.125rem] whitespace-nowrap text-btnBlue'>{selectedLanguage}</span>
                 {isDropdownOpen ? (<TopIcon />) : (<ButtonIcon />)}
             </div>
             {isDropdownOpen && (
-                <div className="flex flex-col items-center h-auto absolute translate-y-[70px] bg-langWhite rounded-[10px] transition-all duration-200 w-[6.75rem] py-[0.625rem] gap-[0.625rem] border border-white rounded-[8px bg-langWhite]">
+                <div className="flex flex-col items-center h-auto absolute translate-y-[90px] bg-langWhite rounded-[10px] transition-all duration-200 w-[6.75rem] py-[0.625rem] gap-[0.625rem] border border-white rounded-[8px bg-langWhite]">
                     {langData.map((item) => {
                         if (item.lang === selectedLanguage) {
                             return null

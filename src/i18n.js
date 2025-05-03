@@ -36,7 +36,7 @@ i18n
           },
           about: {
             title: 'About Us',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, placeat hic quam doloribus eius accusantium illum asperiores ad, deleniti porro, qui rerum possimus reiciendis ratione dicta excepturi nisi! Non, ullam!',
+            text: 'Our company is newly opened and we are ready to provide you with the best service. We are a team of professionals who are ready to help you with your business.',
             btn1: 'More about us',
           },
           services: {
@@ -135,7 +135,7 @@ i18n
           },
           about: {
             title: 'Biz Haqimizda',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, placeat hic quam doloribus eius accusantium illum asperiores ad, deleniti porro, qui rerum possimus reiciendis ratione dicta excepturi nisi! Non, ullam!',
+            text: 'Bizning kompaniyamiz yangi ochilgan va biz sizga eng yaxshi xizmatni taqdim etishga tayyormiz. Biz sizning biznesingizga yordam berishga tayyor bolgan professionallar jamoasimiz.',
             btn1: 'Biz haqimizda batafsil',
           },
           services: {
@@ -234,7 +234,7 @@ i18n
           },
           about: {
            title: 'О нас',
-           text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, placeat hic quam doloribus eius accusantium illum asperiores ad, deleniti porro, qui rerum possimus reiciendis ratione dicta excepturi nisi! Non, ullam!',
+           text: 'Наша компания недавно открылась и мы готовы предоставить вам лучший сервис. Мы команда профессионалов, которые готовы помочь вам с вашим бизнесом.',
            btn1: 'Больше о нас',
           },
           services: {
@@ -312,6 +312,105 @@ i18n
             callUs: 'Позвоните нам',
             appoint: 'записаться на консультацию'
           }
+        }
+      },
+      中国: {
+        translation: {
+          header: {
+            nav: {
+              home: '首页',
+              about: '关于我们',
+              services: '服务',
+              contact: '联系',
+            },
+            touch: '联系我们',
+          },
+          hero: {
+            title: '为企业提供 IT 解决方案',
+            text: 'SoftControl 是一家新成立的 IT 公司，我们在一个网页上存储关于企业家和新开办企业和公司的信息，包括其服务人员和公司/业务的信息，并发布在互联网上。此外，还有一个页面，客户可以在上面提交针对您的服务的请求和报价。',
+            btn1: '获取报价',
+            btn2: '了解更多',
+          },
+          about: {
+            title: '关于我们',
+            text: '我们公司刚刚开业，我们随时准备为您提供最优质的服务。我们拥有一支专业的团队，随时准备为您的业务提供帮助。',
+            btn1: '了解我们更多',
+          },
+          services: {
+            title: '我们的服务',
+            card1: {
+              title: '网页开发',
+              text: '为新成立的公司和企业家创建的网页，远程向人们介绍他们的工作、员工及其服务。',
+              btn: '提交我的项目',
+            },
+            card2: {
+              title: '电报机器人',
+              text: 'Telegram 机器人是减轻与客户互动员工工作量的一种方式，客户请求留在机器人中，并通过机器人与员工沟通。',
+              btn: '提交我的项目',
+            },
+            card3: {
+              title: '作品展示页面',
+              text: 'PORTFOLIO 页面是展示与职业相关的个人作品、在该领域的经验以及能力的网页。',
+              btn: '提交我的项目',
+            },
+            card4: {
+              title: 'IT 代理',
+              text: 'IT 代理 - 为您的项目寻找合适的 IT 公司，或者为您的 IT 公司寻找合适项目的服务。',
+              btn: '提交我的项目',
+            },
+            card5: {
+              title: '企业网页',
+              text: '开发任何级别的网络平台、企业网站，从而提升您的销售额。',
+              btn: '提交我的项目',
+            },
+            card6: {
+              title: '人工智能聊天机器人',
+              text: 'AI 聊天机器人是减轻与客户互动员工工作量的一种方式，客户请求留在机器人中，并通过机器人与员工沟通。',
+              btn: '提交我的项目',
+            }
+          },
+          team: {
+            title: '我们的团队成员',
+            p1: {
+              name: 'Ukhtamov Shokhjakhon',
+              position: '创始人兼首席执行官',
+            },
+            p2: {
+              name: 'Idiyev Aftondil',
+              position: 'AI 专家与后端开发人员',
+            },
+            p3: {
+              name: 'Sobirov Baxtiyor',
+              position: 'UI/UX 设计师',
+            },
+            p4: {
+              name: 'Ukhtamov Shokhjakhon',
+              position: '创始人兼首席执行官',
+            },
+            p5: {
+              name: 'Ukhtamov Shokhjakhon',
+              position: '创始人兼首席执行官',
+            },
+            p6: {
+              name: 'Ukhtamov Shokhjakhon',
+              position: '创始人兼首席执行官',
+            }
+          },
+          contact: {
+            title: '联系我们',
+            form: {
+              name: '姓名',
+              namePlace: '请输入您的姓名',
+              phone: '电话号码',
+              phonePlace: '请输入您的电话号码',
+              email: '电子邮箱',
+              emailPlace: '请输入您的电子邮箱',
+              btn: '发送',
+            },
+            title2: '你有想法想实现吗？让我们一起讨论！',
+            callUs: '或致电我们',
+            appoint: '预约咨询',
+          },
         }
       }
     }

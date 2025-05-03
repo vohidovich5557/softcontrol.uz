@@ -66,11 +66,11 @@ export const Home = ({onButtonClick}) => {
         <section> 
              <div className="container flex flex-col py-[100px] lg:flex-row items-center justify-center gap-[40px]">
            <div  className="flex flex-col items-center lg:items-start  gap-[20px]">
-            <span className="text-[23px] lg:text-[30px] font-medium text-black text-start">{t('hero.title')}</span>
-            <span className="text-[14px] lg:text-[16px] font-normal text-navColor text-center lg:w-[70%] lg:text-start">{t('hero.text')}</span>
+            <span className="text-[23px] lg:text-[30px] font-grotesk font-[600] text-black text-start">{t('hero.title')}</span>
+            <span className="text-[14px] lg:text-[16px] font-normal font-grotesk text-navColor text-center lg:w-[70%] lg:text-start">{t('hero.text')}</span>
             <div className="flex flex-col md:flex-row w-[100%] lg:w-[60%] items-center justify-center gap-[10px]">
-                <button onClick={srollToFooter} className="w-[100%] rounded-[5px] hover:text-white transition-all duration-300 h-auto py-[10px] bg-btnBlue text-btnWhite">{t('hero.btn1')}</button>
-                <button onClick={scrollToService} className="w-[100%] rounded-[5px] hover:text-white transition-all duration-300 h-auto py-[10px] bg-btnBlue text-btnWhite">{t('hero.btn2')}</button>
+                <button onClick={srollToFooter} className="w-[100%] rounded-[5px] font-grotesk hover:text-white transition-all duration-300 h-auto py-[10px] bg-btnBlue text-btnWhite">{t('hero.btn1')}</button>
+                <button onClick={scrollToService} className="w-[100%] rounded-[5px] font-grotesk hover:text-white transition-all duration-300 h-auto py-[10px] bg-btnBlue text-btnWhite">{t('hero.btn2')}</button>
             </div>
            </div>
            <div className="w-[100%] h-auto">
@@ -81,7 +81,7 @@ export const Home = ({onButtonClick}) => {
          {/* about page for the home */}
          <section>
             <div className='bg-bgBlack'>
-            <div className='container  flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between  w-[100%] gap-[40px] pb-[50px] pt-[50px] mt-[40px]'>
+            <div className='container  flex flex-col-reverse font-grotesk lg:flex-row items-center justify-center lg:justify-between  w-[100%] gap-[40px] pb-[50px] pt-[50px] mt-[40px]'>
             <div  className='w-[50%] h-auto'>
                 <img src={About} alt="img of mine" className='w-[100%] h-[100%] object-cover' />
             </div>
@@ -97,7 +97,7 @@ export const Home = ({onButtonClick}) => {
          </section>
          {/* service section for the home page */}
          <section>
-            <div ref={serviceRef} className='container mt-[40px] gap-[70px] pb-[150px] pt-[50px] flex flex-col'>
+            <div ref={serviceRef} className='container font-grotesk mt-[40px] gap-[70px] pb-[150px] pt-[50px] flex flex-col'>
             <div className='flex flex-col items-center gap-[20px] lg:gap-[30px]'>
                 <h2  className='text-[20px] lg:text-[26px] font-medium text-black'>{t('services.title')}</h2>
                 <div  className='flex w-[70%] items-center  justify-center gap-[10px]'>
@@ -114,7 +114,7 @@ export const Home = ({onButtonClick}) => {
          </section>
          {/* this section for the footer for the home */}
           <section>
-           <div ref={footerRef} className='w-[100%] h-auto bg-bgBlack'>
+           <div ref={footerRef} className='w-[100%] font-grotesk h-auto bg-bgBlack'>
              <div className='container w-[100%] mt-[60px] py-[30px] flex flex-col lg:flex-row items-center justify-center gap-[30px]'>
             <div className='flex flex-col items-center lg:gap-[40px] justify-center w-[100%] h-auto'>
                 <h2 className='text-[26px] lg:text-[40px] lg:w-[70%] font-medium text-center lg:text-start text-white'>{t('contact.title2')}</h2>

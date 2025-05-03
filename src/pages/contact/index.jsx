@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import { PropagateLoader } from "react-spinners";
 import Email from '../../images/email.png'
 import Phone from '../../images/call.png'
 import { useForm } from "react-hook-form";
@@ -10,7 +8,6 @@ import Map from "../../components/common/map";
 
 export const Contact = () => {
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
-    const [loading, setloading] = useState(false);
     const {t} = useTranslation()
 
     const submit = async(data) => {
@@ -46,20 +43,9 @@ export const Contact = () => {
     }
     }
 
-    useEffect(() => {
-        setloading(true);
-        setTimeout(() => {
-            setloading(false);
-        }, 1000);
-    }, [])
     return (
         <>
-         {loading ? (
-            <div className="w-[100%] h-[100vh] flex items-center justify-center">
-                <PropagateLoader size={21} color="#b3b3b3" />
-            </div>
-         ) : (
-            <div className="container pt-[40px] pb-[20px] flex items-center justify-center h-[100%]">
+         <div className="container pt-[40px] pb-[20px] font-grotesk flex items-center justify-center h-[100%]">
                 <div className="w-[100%] md:w-[90%] h-auto py-[50px] flex flex-col lg:flex-row items-center justify-center gap-[80px] px-[20px] lg:px-[50px] border rounded-[14px] shadow-md lg:shadow-xl shadow-btnWhite">
                     <div className="w-[100%] flex flex-col items-center justify-center lg:gap-[40px] gap-[80px]">
                         <div className="flex w-[100%] flex-col items-center lg:justify-start lg:items-start gap-[10px]">
@@ -106,12 +92,15 @@ export const Contact = () => {
                         </div>
                        </div>
                         <div className="w-[100%] md:w-[60%] lg:w-[100%] rounded-[14px] h-[300px] overflow-hidden border border-black">
-                            <Map />
+                            <iframe 
+                             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.4319708765624!2d69.33350857624481!3d41.34296367130552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef462741767db%3A0x8756abccb09e171d!2sTepamasjid%20Jameh%20Mosque!5e0!3m2!1sen!2s!4v1746294698827!5m2!1sen!2s'
+                              width="100%"
+                              height="100%"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
-         )}
         </>
     )
 }

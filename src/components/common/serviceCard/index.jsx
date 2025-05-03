@@ -6,7 +6,7 @@ export const ServiceCard = ({img, name, text, soon, id}) => {
     const navigate = useNavigate()
     return (
         <>
-         <div key={id} onClick={() => navigate("/services")} className="w-[100%] cursor-pointer relative  shadow-md lg:hover:translate-y-[-30px] hover:w-[106%] lg:hover:w-[100%] transition-all duration-500 flex flex-col items-start md:items-center gap-[30px] lg:gap-[20px] h-[198px] pt-[10px] pb-[20px] px-[20px] border rounded-[14px] bg-langWhite hover:bg-cardWhite">
+         <div key={id} onClick={() => navigate("/services")} className="w-[100%] cursor-pointer relative  shadow-md lg:hover:translate-y-[-30px]  lg:hover:w-[100%] transition-all duration-500 flex flex-col items-start md:items-center gap-[30px] lg:gap-[20px] h-[198px] pt-[10px] pb-[20px] px-[20px] border rounded-[14px] bg-langWhite hover:bg-cardWhite">
             <div className='flex items-center gap-[20px]'>
                <div className='w-[48px] h-[48px]'>
                  <img src={img} alt="img of mine" className='w-[100%] h-[100%] object-cover' />

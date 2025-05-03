@@ -3,17 +3,16 @@ import Bot from '../images/tgbot.png'
 import Pro from '../images/protfolio.png'
 import Aftondil from '../images/aftondil.jpg'
 import Shokh from '../images/shokh.jpg'
-import { AmericaFlag, RussianFlag, UzbFlag } from '../components/svgs'
-import Service1 from '../images/service1.jpg'
-import Pros from '../images/pro.jpg'
-import tgBot from '../images/tgbot1.png'
+import { AmericaFlag, RussianFlag, UzbFlag, ChinaFlag } from '../components/svgs'
+import Service1 from '../images/service1.webp'
+import Pros from '../images/pro.webp'
+import tgBot from '../images/tgbot1.webp'
 import ITAgency from '../images/itagency.png'
-import Agency from '../images/agency.png'
-import App from '../images/app.png'
+import Agency from '../images/agency.webp'
 import Corparative from '../images/corporative.png'
-import CoPage from '../images/copage.png'
+import CoPage from '../images/copage.webp'
 import ChatBot from '../images/chatbot.png'
-import ChatbotBig from '../images/chatbotbig.png'
+import ChatbotBig from '../images/chatbotbig.webp'
 
 
 
@@ -68,13 +67,6 @@ export const serviceData = [
         img: ITAgency,
     },
     {
-        id: 5,
-        name: (t) => t('services.card5.title'),
-        text: (t) => t('services.card5.text'),
-        img: App,
-        soon: true,
-    },
-    {
         id: 6,
         name: (t) => t('services.card5.title'),
         text: (t) => t('services.card5.text'),
@@ -110,6 +102,12 @@ export const langData = [
         clickLang: 'uz',
         flag: UzbFlag,
     },
+    {
+        id: 4,
+        lang: '中国',
+        clickLang: '中国',
+        flag: ChinaFlag,
+    }
 ]
 
 // this data for the services data
