@@ -83,7 +83,7 @@ export const Header = () => {
                 </div>
 
                 {open && (
-                    <div className="md:hidden fixed top-[89px] border border-t left-0 w-full bg-white shadow-md z-40 transition-all duration-300 ease-in-out">
+                    <div className="md:hidden fixed z-[999] top-[89px] border border-t left-0 w-full bg-white shadow-md transition-all duration-300 ease-in-out">
                       <div className="flex flex-col items-start px-4 py-6 gap-4">
                         {navData.map((i) => (
                           <NavLink
